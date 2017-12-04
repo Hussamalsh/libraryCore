@@ -22,6 +22,7 @@ namespace Library
         public void ConfigureServices(IServiceCollection services)
         {
 
+
             services.AddMvc();
             services.AddSingleton(Configuration);
             services.AddScoped<ILibraryCard, LibraryCardService>(); // so that Bookservice is injected into controllers and other components that request IBook
